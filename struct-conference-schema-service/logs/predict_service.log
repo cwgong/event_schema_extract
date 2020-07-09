@@ -1,0 +1,41 @@
+[I 191205 14:07:04 struct-conference-schema-service:161] Server Inititial ... 
+[I 191205 14:07:04 struct-conference-schema-service:169] Server Inititial Success! 
+[I 191205 14:07:55 struct-conference-schema-service:60] post ...
+[E 191205 14:07:55 struct-conference-schema-service:75] Expecting value: line 1 column 6 (char 5)
+    Traceback (most recent call last):
+      File "C:/Users/Administrator/PycharmProjects/NO_1/event_schema_extract/struct-conference-schema-service/struct-conference-schema-service.py", line 63, in post
+        body_data = json_decode(self.request.body)
+      File "C:\Program Files\Anaconda3\lib\site-packages\tornado\escape.py", line 87, in json_decode
+        return json.loads(to_basestring(value))
+      File "C:\Program Files\Anaconda3\lib\json\__init__.py", line 319, in loads
+        return _default_decoder.decode(s)
+      File "C:\Program Files\Anaconda3\lib\json\decoder.py", line 339, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "C:\Program Files\Anaconda3\lib\json\decoder.py", line 357, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 6 (char 5)
+[I 191205 14:07:55 web:1971] 200 POST /conference_Extract (::1) 4.00ms
+[I 191205 14:08:35 struct-conference-schema-service:60] post ...
+[E 191205 14:08:35 struct-conference-schema-service:75] Expecting value: line 1 column 6 (char 5)
+    Traceback (most recent call last):
+      File "C:/Users/Administrator/PycharmProjects/NO_1/event_schema_extract/struct-conference-schema-service/struct-conference-schema-service.py", line 63, in post
+        body_data = json_decode(self.request.body)
+      File "C:\Program Files\Anaconda3\lib\site-packages\tornado\escape.py", line 87, in json_decode
+        return json.loads(to_basestring(value))
+      File "C:\Program Files\Anaconda3\lib\json\__init__.py", line 319, in loads
+        return _default_decoder.decode(s)
+      File "C:\Program Files\Anaconda3\lib\json\decoder.py", line 339, in decode
+        obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+      File "C:\Program Files\Anaconda3\lib\json\decoder.py", line 357, in raw_decode
+        raise JSONDecodeError("Expecting value", s, err.value) from None
+    json.decoder.JSONDecodeError: Expecting value: line 1 column 6 (char 5)
+[I 191205 14:08:35 web:1971] 200 POST /conference_Extract (::1) 1.00ms
+[I 191205 14:10:03 struct-conference-schema-service:160] Server Inititial ... 
+[I 191205 14:10:03 struct-conference-schema-service:170] Server Inititial Success! 
+[I 191205 17:11:53 struct-conference-schema-service:160] Server Inititial ... 
+[I 191205 17:11:53 struct-conference-schema-service:170] Server Inititial Success! 
+[I 191205 17:12:06 struct-conference-schema-service:60] post ...
+[I 191205 17:12:06 struct-conference-schema-service:129] write result json finisehd!
+[I 191205 17:12:06 struct-conference-schema-service:73] 
+    get success! ------>   time: 0:00:00
+[I 191205 17:12:06 web:1971] 200 POST /conference_Extract?s=%222020%E5%B9%B43%E6%9C%8822%E6%97%A5%EF%BC%8C%E4%B8%AD%E5%9B%BD%E7%AC%AC%E4%BA%94%E5%B1%8A%E8%B4%A2%E6%94%BF%E5%A4%A7%E4%BC%9A%E5%9C%A8%E4%BA%BA%E6%B0%91%E5%A4%A7%E4%BC%9A%E5%A0%82%E5%8F%AC%E5%BC%80%E3%80%82%22&publishAt=1575514872000 (::1) 2.00ms
